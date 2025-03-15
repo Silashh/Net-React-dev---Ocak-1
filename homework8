@@ -1,0 +1,35 @@
+1-) C# Programlama Dili Nedir? Hangi Alanlarda Kullanılır?
+C#, Microsoft tarafından geliştirilen nesne yönelimli (object-oriented) ve genel amaçlı bir programlama dilidir. C#, özellikle .NET Framework veya .NET Core platformlarında uygulamalar geliştirmek için yaygın olarak kullanılır.
+C# dili, yüksek performansı, güçlü kütüphaneleri ve geniş ekosistemi ile bilinir.
+
+Kullanım Alanları:
+Masaüstü Uygulamaları: Windows Forms, WPF gibi teknolojilerle masaüstü uygulamaları geliştirilir.
+Web Uygulamaları: ASP.NET ile dinamik web siteleri ve web servisleri oluşturulabilir.
+Mobil Uygulamalar: Xamarin ile hem iOS hem de Android platformları için mobil uygulamalar yazılabilir.
+Oyun Geliştirme: Unity oyun motorunda C# yaygın olarak kullanılır.
+Veri Tabanı Uygulamaları: SQL Server gibi veri tabanları ile bağlantı kurarak, veri depolama ve erişim işlemleri yapılabilir.
+Bulut Tabanlı Uygulamalar: Azure ile bulut platformlarında çalışan uygulamalar geliştirilebilir.
+  
+2-) Bir Programın Çalışması İçin Temel Bileşenler Nelerdir?
+Bir programın çalışması için aşağıdaki temel bileşenler gereklidir:
+
+-Derleyici (Compiler): Programı yazarken kullanılan kaynak kodunu (source code) makine koduna dönüştüren araçtır. C# için bu, Visual Studio veya .NET SDK gibi araçlarla yapılır.
+-RAM (Random Access Memory): Programın çalıştığı anda, verileri ve işlemci tarafından erişilen bilgileri tutan geçici bellek birimidir. Program çalışırken RAM’de tutulur.
+-CPU (Central Processing Unit): Bilgisayarın işlem birimidir. Programın komutlarını işler ve matematiksel, mantıksal hesaplamaları yapar.
+-Depolama (Storage): Programın kaynak kodları, veritabanları veya dosya sisteminde tutulan verileri barındırır. Örneğin, Sabit Disk (HDD) veya SSD.
+-Çalıştırılabilir Dosya (Executable): Derlenmiş programın çalıştırılabilir dosyasıdır. C# programları için bu dosya genellikle .exe uzantılıdır.
+3-) Kullanıcıdan Adını Alıp Ekrana Yazdıran Basit Bir C# Programı
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+
+       
+        Console.WriteLine($"Hello, {name}!");
+    }
+}
+
